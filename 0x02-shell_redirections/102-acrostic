@@ -1,2 +1,3 @@
 #!/bin/bash
-cut -c 1 | paste -s -d "
+awk '{printf "%c", substr($0, 1, 1)} END{print ""}'
+ 
